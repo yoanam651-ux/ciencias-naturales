@@ -1,0 +1,192 @@
+/* BASE */
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
+
+/* NAV */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #0f172a;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+/* CAPAS */
+.capas {
+    text-align: center;
+    padding: 20px;
+}
+
+.capa {
+    margin: 10px auto;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.corteza {
+    background: #4ade80;
+    color: black;
+}
+
+.manto {
+    background: #f97316;
+}
+
+.nucleo {
+    background: #ef4444;
+}
+
+/* 🌍 PLANETA */
+.planeta-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.planeta {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #3b82f6, #1e3a8a);
+    box-shadow: 0 0 30px #60a5fa;
+    animation: girar 8s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* INFO */
+.info {
+    text-align: center;
+    padding: 20px;
+}
+
+.info li {
+    list-style: none;
+    margin: 10px auto;
+    width: 250px;
+    background: #1f2937;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* TV */
+.video-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.tv {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #111827;
+    border-radius: 20px;
+    position: relative;
+}
+
+.tv::before,
+.tv::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background: white;
+    top: -40px;
+}
+
+.tv::before {
+    left: 30%;
+    transform: rotate(-20deg);
+}
+
+.tv::after {
+    right: 30%;
+    transform: rotate(20deg);
+}
+
+.pantalla iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+/* QUIZ */
+.quiz {
+    text-align: center;
+    padding: 40px;
+}
+
+label {
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    background: #2563eb;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.correcto,
+.incorrecto {
+    display: none;
+}
+
+#p1a:checked ~ .correcto,
+#p2a:checked ~ .correcto,
+#p3a:checked ~ .correcto {
+    display: block;
+    color: lightgreen;
+}
+
+#p1b:checked ~ .incorrecto,
+#p2b:checked ~ .incorrecto,
+#p3b:checked ~ .incorrecto {
+    display: block;
+    color: red;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0f172a;
+}
+/* ===== IMAGEN DE LA TIERRA ===== */
+.imagen-tierra {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imagen-tierra img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.imagen-tierra img:hover {
+    transform: scale(1.05);
+}

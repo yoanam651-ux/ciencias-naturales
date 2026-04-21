@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciencias Naturales</title>
+
+    <!-- TIPOGRAFÍA -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>🌱 Aprende Ciencias</h2>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#temas">Temas</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+</header>
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-banner">
+
+        <img src="C:\Users\DIRECCION\Documents\CIENCIASN\imagenes\descarga (14).jfif">
+
+        <div class="hero-text">
+            <h1>🌎 Ciencias Naturales</h1>
+            <p>Explora, aprende y diviértete</p>
+
+            <a href="#temas" class="btn">Comenzar</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TARJETAS -->
+<section class="contenedor" id="temas">
+
+    <div class="card">
+        <img src="C:\Users\DIRECCION\Documents\CIENCIASN\imagenes\animales del bosque.jfif">
+        <h3>🌿 Seres vivos</h3>
+
+        <a href="tema1.html" class="boton">Entrar</a>
+
+        <input type="checkbox" id="vivos">
+        <label for="vivos" class="boton">Ver información</label>
+
+        <div class="contenido">
+            <p>Los seres vivos nacen, crecen, se reproducen y mueren.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\DIRECCION\Documents\CIENCIASN\imagenes\descarga (9).jfif">
+        <h3>💧 Ciclo del agua</h3>
+
+        <a href="tema2.html" class="boton">Entrar</a>
+
+        <input type="checkbox" id="agua">
+        <label for="agua" class="boton">Ver información</label>
+
+        <div class="contenido">
+            <p>El agua pasa por evaporación, condensación y precipitación.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\DIRECCION\Documents\CIENCIASN\imagenes\Todos pueden tener una interpretación diferente de esta imagen, ¡intercambiemos ideas juntos!.jfif">
+        <h3>🌍 La Tierra</h3>
+
+        <a href="tema3.html" class="boton">Entrar</a>
+
+        <input type="checkbox" id="tierra">
+        <label for="tierra" class="boton">Ver información</label>
+
+        <div class="contenido">
+            <p>La Tierra tiene núcleo, manto y corteza.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="quiz">
+
+    <h2>🧠 Examen de Ciencias Naturales</h2>
+
+    <!-- ⏳ TU BARRA DE TIEMPO (NO MODIFICADA) -->
+    <div class="timer">
+        ⏳ Tiempo:
+        <div class="barra-tiempo"></div>
+    </div>
+
+    <div class="pregunta">
+        <p>1. ¿El agua en estado gaseoso es?</p>
+
+        <input type="radio" name="q1" id="q1a" class="correct">
+        <label for="q1a">Vapor</label>
+
+        <input type="radio" name="q1" id="q1b">
+        <label for="q1b">Hielo</label>
+
+        <div class="correcto">✅ Correcto</div>
+        <div class="incorrecto">❌ Incorrecto</div>
+    </div>
+
+    <div class="pregunta">
+        <p>2. ¿Qué necesitan los seres vivos?</p>
+
+        <input type="radio" name="q2" id="q2a" class="correct">
+        <label for="q2a">Agua y alimento</label>
+
+        <input type="radio" name="q2" id="q2b">
+        <label for="q2b">Solo luz</label>
+
+        <div class="correcto">✅ Correcto</div>
+        <div class="incorrecto">❌ Incorrecto</div>
+    </div>
+
+    <div class="pregunta">
+        <p>3. ¿Cuál es el planeta donde vivimos?</p>
+
+        <input type="radio" name="q3" id="q3a" class="correct">
+        <label for="q3a">Tierra</label>
+
+        <input type="radio" name="q3" id="q3b">
+        <label for="q3b">Marte</label>
+
+        <div class="correcto">✅ Correcto</div>
+        <div class="incorrecto">❌ Incorrecto</div>
+    </div>
+
+    <div class="pregunta">
+        <p>4. ¿Qué forma las nubes?</p>
+
+        <input type="radio" name="q4" id="q4a" class="correct">
+        <label for="q4a">Condensación</label>
+
+        <input type="radio" name="q4" id="q4b">
+        <label for="q4b">Fuego</label>
+
+        <div class="correcto">✅ Correcto</div>
+        <div class="incorrecto">❌ Incorrecto</div>
+    </div>
+
+    <div class="pregunta">
+        <p>5. ¿Los árboles son seres vivos?</p>
+
+        <input type="radio" name="q5" id="q5a" class="correct">
+        <label for="q5a">Sí</label>
+
+        <input type="radio" name="q5" id="q5b">
+        <label for="q5b">No</label>
+
+        <div class="correcto">✅ Correcto</div>
+        <div class="incorrecto">❌ Incorrecto</div>
+    </div>
+
+    <div class="pregunta">
+        <p>6. ¿Qué cubre la mayor parte de la Tierra?</p>
+
+        <input type="radio" name="q6" id="q6a" class="correct">
+        <label for="q6a">Agua</label>
+
+        <input type="radio" name="q6" id="q6b">
+        <label for="q6b">Arena</label>
+
+        <div class="correcto">✅ Correcto</div>
+        <div class="incorrecto">❌ Incorrecto</div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Aprende Ciencias 🌱</p>
+</footer>
+
+</body>
+</html>

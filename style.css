@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #2c7a7b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 400px; /* 🔥 IMPORTANTE: evita que se deforme */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* IMAGEN AJUSTADA */
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 evita deformación */
+    display: block;
+    filter: brightness(60%);
+}
+
+/* TEXTO ENCIMA BIEN CENTRADO */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+
+/* TÍTULO */
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.6);
+}
+
+/* SUBTÍTULO */
+.hero-text p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.6);
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #10c0df;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* BOTÓN */
+.btn {
+    padding: 12px 28px;
+    background: #0ed5d2;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ===== CARDS ===== */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    width: 260px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* BOTONES */
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #2693f8;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* CHECKBOX INFO */
+input[type="checkbox"] {
+    display: none;
+}
+
+.contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+input:checked ~ .contenido {
+    max-height: 120px;
+}
+
+/* ===== QUIZ ===== */
+.quiz {
+    text-align: center;
+    padding: 40px;
+}
+
+.pregunta {
+    background: white;
+    margin: 20px auto;
+    width: 340px;
+    padding: 18px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
+    margin: 8px;
+    padding: 10px;
+    background: #296af8;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* RESPUESTAS */
+.correcto,
+.incorrecto {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.correct:checked ~ .correcto {
+    display: block;
+    color: green;
+}
+
+input:not(.correct):checked ~ .incorrecto {
+    display: block;
+    color: red;
+}
+
+/* ===== TU BARRA DE TIEMPO (NO MODIFICADA) ===== */
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.barra-tiempo {
+    width: 300px;
+    height: 12px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: linear-gradient(to right, green, yellow, red);
+    animation: tiempo2min 120s linear forwards;
+}
+
+@keyframes tiempo2min {
+    0% { transform: scaleX(1); }
+    100% { transform: scaleX(0); opacity: 0.3; }
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #41b2b4ea;
+    color: white;
+}

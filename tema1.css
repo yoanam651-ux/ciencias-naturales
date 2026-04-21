@@ -1,0 +1,220 @@
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #c2ffd8, #465efb);
+    color: #1f2937;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 25px;
+    background: rgba(44, 122, 123, 0.95);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.15);
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: white;
+    color: #2c7a7b;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* ===== IMAGEN DESTACADA ===== */
+.imagen-destacada {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagen-destacada img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.imagen-destacada img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== INFO ===== */
+.info {
+    text-align: center;
+    padding: 20px;
+}
+
+.info h2 {
+    font-size: 24px;
+}
+
+.info ul {
+    padding: 0;
+}
+
+.info li {
+    list-style: none;
+    background: white;
+    margin: 12px auto;
+    width: 220px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.info li:hover {
+    transform: scale(1.05);
+    background: #e0f7ff;
+}
+
+/* ===== VIDEO ===== */
+.video-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.tv {
+    width: 420px;
+    margin: auto;
+    padding: 18px;
+    background: #1f2937;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* antenas */
+.tv::before,
+.tv::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 55px;
+    background: black;
+    top: -45px;
+}
+
+.tv::before {
+    left: 35%;
+    transform: rotate(-20deg);
+}
+
+.tv::after {
+    right: 35%;
+    transform: rotate(20deg);
+}
+
+.pantalla iframe {
+    width: 100%;
+    height: 230px;
+    border-radius: 12px;
+}
+
+/* ===== QUIZ ===== */
+.quiz {
+    text-align: center;
+    padding: 40px;
+}
+
+.quiz h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* preguntas tipo tarjeta */
+.pregunta {
+    background: white;
+    width: 320px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.pregunta p {
+    font-weight: bold;
+}
+
+/* botones */
+label {
+    display: block;
+    margin: 8px;
+    padding: 10px;
+    background: #3182ce;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label:hover {
+    background: #2563eb;
+    transform: scale(1.03);
+}
+
+/* radio oculto */
+input[type="radio"] {
+    display: none;
+}
+
+/* respuestas */
+.correcto,
+.incorrecto {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* lógica */
+#p1a:checked ~ .correcto,
+#p2a:checked ~ .correcto,
+#p3a:checked ~ .correcto {
+    display: block;
+    color: green;
+}
+
+#p1b:checked ~ .incorrecto,
+#p2b:checked ~ .incorrecto,
+#p3b:checked ~ .incorrecto {
+    display: block;
+    color: red;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c7a7b;
+    color: white;
+    margin-top: 20px;
+}
